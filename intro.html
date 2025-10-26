@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+ 
+  animation: fadeIn 1.2s ease-in;
+ 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #5f72be, #9b23ea);
+  color: white;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #6a11cb;
+}
+
+.btn.secondary {
+  background-color: #2575fc;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+    </style>
+ 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Finder | Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="intro-page">
+  <div class="container">
+    <h1 class="title">🚀 Internship Finder</h1>
+    <p class="tagline">
+      Your one-stop destination to find the best internships that match your skills and interests.
+    </p>
+    <div class="buttons">
+      <a href="internfinder.html" class="btn primary">Sign Up</a>
+      <a href="signup.html" class="btn secondary">Login</a>
+    </div>
+  </div>
+</body>
+</html>
