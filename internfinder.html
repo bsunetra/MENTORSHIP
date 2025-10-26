@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+       
+        <title>INTERNSHIP FINDER APP</title>
+    </head>
+    <style>
+        
+         body {
+            height: max-content;
+            display: flexbox;
+            font-size:x-large;
+            font-weight: 900;
+            background: linear-gradient(132deg, #000000,#4479c9, #724daf,#a42665,#da3946,#ffffff);
+            background-size: 400% 400%;
+            align-items:center;
+         
+            animation: BackgroundGradient 15s ease infinite;
+            color:#ffffff
+    }
+    .buttons {
+        isplay: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .btn {
+        text-decoration: none;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+    .btn.primary {
+        background-color: #6a11cb;
+        }
+
+        .btn.secondary {
+        background-color: #2575fc;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+    
+    @keyframes BackgroundGradient {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;
+        }
+         
+        
+    </style>
+    
+    <body>
+        <center><h1>THE EASIEST WAY TO FIND YOUR PREFERRED INTERNSHIP</h1></center>
+        <center><h1>SIGN UP FOR THE BEST OPPORTUNITY!</h1></center>
+        <hr>
+       
+        <form>
+            <center>
+                <table>
+                    <tr>
+                        <td><h2>NAME</h2></td>
+                        <td><h2><input type="text" placeholder="Enter your name"></h2></td>
+
+                    </tr>
+                    <tr>
+                        <td><h2>AGE</h2></td>
+                        <td><input type="number" placeholder="Enter your age"></td>
+
+                    </tr>
+                    <tr>
+                        <td><h2>DOB</h2></td>
+                        <td><input type="date" placeholder="Enter your date of birth"></td>
+
+                    </tr>
+                    <tr>
+                        <td><h2>GMAIL</h2></td>
+                        <td><input type="mail" placeholder="Enter your mail"></td>
+
+                    </tr>
+                    <tr>
+                        <td><h2>GENDER></h2></td>
+                        <td> 
+                            <select>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td><h2>PHONE NUMBER</h2></td>
+                        <td><input type="number" placeholder="Enter your number"></td>
+
+                    </tr>
+                    <tr>
+                        <td><h2>FIELD OF STUDY</h2></td>
+                        <td><input type="text" placeholder="Enter your Field of study"></td>
+
+                    </tr>
+                    <tr>
+                        <td><h2>COLLEGE NAME</h2></td>
+                        <td><input type="text" placeholder="Enter your college"></td>
+
+                    </tr>
+                    <tr>
+                        <td><h3><button>SUBMIT</button></h3></td>
+                        <td><h3><button>RESET</button></h3></td>
+                    </tr>
+                </table>
+            </center>
+
+        </form>
+    </body>
+</html>
