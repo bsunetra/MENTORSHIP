@@ -58,33 +58,34 @@
         <center><h1>SIGN UP FOR THE BEST OPPORTUNITY!</h1></center>
         <hr>
        
-        <form>
+       <form action="save_signup.php" method="POST">
+
             <center>
                 <table>
                     <tr>
                         <td><h2>NAME</h2></td>
-                        <td><h2><input type="text" placeholder="Enter your name"></h2></td>
+                        <td><h2><input type="text" name="name" placeholder="Enter your name"></h2></td>
 
                     </tr>
                     <tr>
                         <td><h2>AGE</h2></td>
-                        <td><input type="number" placeholder="Enter your age"></td>
+                        <td><input type="number" name="age" placeholder="Enter your age"></td>
 
                     </tr>
                     <tr>
                         <td><h2>DOB</h2></td>
-                        <td><input type="date" placeholder="Enter your date of birth"></td>
+                        <td><input type="date" name="dob" name="email" placeholder="Enter your date of birth"></td>
 
                     </tr>
                     <tr>
                         <td><h2>GMAIL</h2></td>
-                        <td><input type="mail" placeholder="Enter your mail"></td>
+                        <td><input type="mail" name="email" placeholder="Enter your mail"></td>
 
                     </tr>
                     <tr>
-                        <td><h2>GENDER></h2></td>
+                        <td><h2>GENDER</h2></td>
                         <td> 
-                            <select>
+                            <select name="gender">
                                 <option>Male</option>
                                 <option>Female</option>
                                 <option>Other</option>
@@ -94,26 +95,29 @@
                     </tr>
                     <tr>
                         <td><h2>PHONE NUMBER</h2></td>
-                        <td><input type="number" placeholder="Enter your number"></td>
+                        <td><input type="number" name="phone" placeholder="Enter your number"></td>
 
                     </tr>
                     <tr>
                         <td><h2>FIELD OF STUDY</h2></td>
-                        <td><input type="text" placeholder="Enter your Field of study"></td>
+                        <td><input type="text" name="field_of_study" placeholder="Enter your Field of study"></td>
 
                     </tr>
                     <tr>
                         <td><h2>COLLEGE NAME</h2></td>
-                        <td><input type="text" placeholder="Enter your college"></td>
+                        <td><input type="text" name="college" placeholder="Enter your college"></td>
 
                     </tr>
                     <tr>
-                        <td><h3><button>SUBMIT</button></h3></td>
-                        <td><h3><button>RESET</button></h3></td>
+                        <td><a href="signs.html" class="btn primary">Sign Up</a></td>
+                        <td><a class="btn secondary">RESET</a></td>
+                         
+                         
                     </tr>
                 </table>
             </center>
 
         </form>
+         
     </body>
 </html>
