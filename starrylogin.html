@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thank You - Internship Finder</title>
+  <title>Sign In - Internship Finder</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -97,6 +97,8 @@
       font-weight: 600;
       transition: all 0.3s ease;
       font-size: 1rem;
+      border: none;
+      cursor: pointer;
     }
 
     .btn.primary {
@@ -125,11 +127,11 @@
     <h1>Welcome Back 🌟</h1>
     <p>Please enter your username and password to continue.</p>
 
-    <input type="text" placeholder="Enter your username" />
-    <input type="password" placeholder="Enter your password" />
+    <input id="username" type="text" placeholder="Enter your username" />
+    <input id="password" type="password" placeholder="Enter your password" />
 
     <div class="buttons">
-      <a href="#" class="btn primary">Sign In</a>
+      <button id="signinBtn" class="btn primary">Sign In</button>
       <a href="index.html" class="btn secondary">Back to Home</a>
     </div>
   </div>
@@ -274,6 +276,11 @@
     function onMouseLeave() {
       pointerX = null; pointerY = null;
     }
+
+    // ---------- SIGN-IN BUTTON REDIRECT ----------
+    document.getElementById("signinBtn").addEventListener("click", () => {
+      window.location.href = "Dashboard.html"; // Redirect to Dashboard page
+    });
   </script>
 </body>
 </html>
